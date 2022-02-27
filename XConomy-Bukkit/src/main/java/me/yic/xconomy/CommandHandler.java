@@ -118,7 +118,7 @@ public class CommandHandler {
                 break;
             }
 
-            case "balancetop": {
+            case "ptop": {
                 if (args.length == 0 || args.length == 1) {
 
                     if (!(sender.isOp() || sender.hasPermission("xconomy.user.balancetop"))) {
@@ -175,7 +175,7 @@ public class CommandHandler {
                 }
             }
 
-            case "pay": {
+            case "send": {
                 if (!(sender instanceof Player)) {
                     sendMessages(sender, translateColorCodes("prefix") + MessagesManager.systemMessage("§6控制台无法使用该指令"));
                     return true;
@@ -278,10 +278,7 @@ public class CommandHandler {
                 break;
             }
 
-            case "money":
-            case "balance":
-            case "economy":
-            case "eco": {
+            case "admin": {
 
                 int commndlength = args.length;
                 StringBuilder reasonmessages = null;
