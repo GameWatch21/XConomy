@@ -121,16 +121,16 @@ public class XConomy extends JavaPlugin {
 
         metrics = new Metrics(this, 6588);
 
-        Bukkit.getPluginCommand("money").setExecutor(new Commands());
-        Bukkit.getPluginCommand("balance").setExecutor(new Commands());
-        Bukkit.getPluginCommand("balancetop").setExecutor(new Commands());
-        Bukkit.getPluginCommand("pay").setExecutor(new Commands());
+        Bukkit.getPluginCommand("admin").setExecutor(new Commands());
+        Bukkit.getPluginCommand("point").setExecutor(new Commands());
+        Bukkit.getPluginCommand("ptop").setExecutor(new Commands());
+        Bukkit.getPluginCommand("send").setExecutor(new Commands());
         Bukkit.getPluginCommand("xconomy").setExecutor(new Commands());
 
-        this.getCommand("money").setTabCompleter(new TabList());
-        this.getCommand("balance").setTabCompleter(new TabList());
-        this.getCommand("balancetop").setTabCompleter(new TabList());
-        this.getCommand("pay").setTabCompleter(new TabList());
+        this.getCommand("admin").setTabCompleter(new TabList());
+        this.getCommand("point").setTabCompleter(new TabList());
+        this.getCommand("ptop").setTabCompleter(new TabList());
+        this.getCommand("send").setTabCompleter(new TabList());
         this.getCommand("xconomy").setTabCompleter(new TabList());
 
         if (config.getBoolean("Settings.eco-command")) {
